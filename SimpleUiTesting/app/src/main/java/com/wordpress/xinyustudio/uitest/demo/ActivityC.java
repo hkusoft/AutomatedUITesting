@@ -1,13 +1,13 @@
-package com.wordpress.xinyustudio.uitest.demouitesting;
+package com.wordpress.xinyustudio.uitest.demo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ActivityB extends AppCompatActivity {
+public class ActivityC extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_b);
+        setContentView(R.layout.activity_c);
     }
 }

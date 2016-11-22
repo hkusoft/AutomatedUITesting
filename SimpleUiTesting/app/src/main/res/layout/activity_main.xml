@@ -8,20 +8,20 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.wordpress.xinyustudio.uitest.demouitesting.MainActivity">
+    tools:context="com.wordpress.xinyustudio.uitest.demo.MainActivity">
 
     <Button
-        android:id="@+id/activity_a"
+        android:id="@+id/goto_activity_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Activity A" />
     <Button
-        android:id="@+id/activity_b"
+        android:id="@+id/goto_activity_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Activity B" />
     <Button
-        android:id="@+id/activity_c"
+        android:id="@+id/goto_activity_c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Activity C" />

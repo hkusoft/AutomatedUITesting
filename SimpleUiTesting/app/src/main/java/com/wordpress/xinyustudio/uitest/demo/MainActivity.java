@@ -1,4 +1,4 @@
-package com.wordpress.xinyustudio.uitest.demouitesting;
+package com.wordpress.xinyustudio.uitest.demo;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.wordpress.xinyustudio.uitest.demouitesting.ActivityA;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     private Button mButtonGotoActivityA;
     private Button mButtonGotoActivityB;
@@ -19,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mButtonGotoActivityA = (Button) findViewById(R.id.activity_a);
-        mButtonGotoActivityB = (Button) findViewById(R.id.activity_b);
-        mButtonGotoActivityC = (Button) findViewById(R.id.activity_c);
+        mButtonGotoActivityA = (Button) findViewById(R.id.goto_activity_a);
+        mButtonGotoActivityB = (Button) findViewById(R.id.goto_activity_b);
+        mButtonGotoActivityC = (Button) findViewById(R.id.goto_activity_c);
 
         mButtonGotoActivityA.setOnClickListener(new View.OnClickListener() {
             @Override
