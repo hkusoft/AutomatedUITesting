@@ -1,5 +1,7 @@
 package com.wordpress.xinyustudio.uitest.demo;
 
+import android.support.annotation.IdRes;
+import android.support.annotation.StringRes;
 import android.support.test.espresso.matcher.ViewMatchers;
 import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
@@ -37,7 +39,8 @@ public class TestMainActivityNavigation {
         onView(ViewMatchers.withId(R.id.goto_activity_a)).perform(click());
 
         // This view is in a different Activity, no need to tell Espresso.
-        onView(withId(R.id.textView_aaa)).check(matches(isDisplayed()));
+        //onView(withId(R.id.textView_aaa)).check(matches(isDisplayed()));
+        shouldSee(R.id.textView_aaa);
     }
 
     /**
@@ -49,7 +52,8 @@ public class TestMainActivityNavigation {
         onView(ViewMatchers.withId(R.id.goto_activity_b)).perform(click());
 
         // This view is in a different Activity, no need to tell Espresso.
-        onView(withId(R.id.textView_bbb)).check(matches(isDisplayed()));
+        //onView(withId(R.id.textView_bbb)).check(matches(isDisplayed()));
+        shouldSee(R.id.textView_bbb);
     }
 
     /**
@@ -61,7 +65,12 @@ public class TestMainActivityNavigation {
         onView(ViewMatchers.withId(R.id.goto_activity_c)).perform(click());
 
         // This view is in a different Activity, no need to tell Espresso.
-        onView(withId(R.id.textView_ccc)).check(matches(isDisplayed()));
+        //onView(withId(R.id.textView_ccc)).check(matches(isDisplayed()));
+        shouldSee(R.id.textView_ccc);
     }
 
+
+    public static void shouldSee(@IdRes int viewId){
+        onView(withId(viewId)).check(matches(isDisplayed()));
+    }
 }
