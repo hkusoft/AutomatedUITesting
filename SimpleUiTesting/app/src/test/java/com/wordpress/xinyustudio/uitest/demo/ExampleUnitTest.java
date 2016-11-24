@@ -1,4 +1,4 @@
-package com.wordpress.xinyustudio.uitest.demo;
+package com.uitest.demo;
 
 import org.junit.Test;
 

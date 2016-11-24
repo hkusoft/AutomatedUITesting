@@ -1,4 +1,4 @@
-package com.wordpress.xinyustudio.uitest.demo;
+package com.uitest.demo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

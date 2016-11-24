@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wordpress.xinyustudio.uitest.demo">
+    package="com.uitest.demo">
 
     <application
         android:allowBackup="true"
@@ -8,16 +8,16 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.wordpress.xinyustudio.uitest.demo.MainActivity">
+        <activity android:name="com.uitest.demo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.wordpress.xinyustudio.uitest.demo.ActivityA" />
-        <activity android:name="com.wordpress.xinyustudio.uitest.demo.ActivityB" />
-        <activity android:name="com.wordpress.xinyustudio.uitest.demo.ActivityC"></activity>
+        <activity android:name="com.uitest.demo.ActivityA" />
+        <activity android:name="com.uitest.demo.ActivityB" />
+        <activity android:name="com.uitest.demo.ActivityC"></activity>
     </application>
 
 </manifest>

@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.wordpress.xinyustudio.uitest.demo.ActivityC">
+    tools:context="com.uitest.demo.ActivityC">
     <TextView
         android:text="@string/this_is_activity_ccc"
         android:layout_width="wrap_content"

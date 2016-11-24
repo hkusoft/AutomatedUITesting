@@ -1,4 +1,4 @@
-package com.wordpress.xinyustudio.uitest.demo;
+package com.uitest.demo;
 
 import android.support.annotation.IdRes;
 import android.support.annotation.StringRes;
