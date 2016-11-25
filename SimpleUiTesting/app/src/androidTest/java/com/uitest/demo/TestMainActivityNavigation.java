@@ -1,5 +1,6 @@
 package com.uitest.demo;
 
+import android.os.SystemClock;
 import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
@@ -18,6 +19,7 @@ public class TestMainActivityNavigation {
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(MainActivity.class);
+    private static long dealyInMillis = 2000L;
 
     /**
      * This function tests button click on "Activity A", then UI should go to the corresponding activity
@@ -26,6 +28,9 @@ public class TestMainActivityNavigation {
     public void TestNavigateToA() {
         TestHelper.clickView(R.id.goto_activity_a);
         TestHelper.shouldSee(R.id.textView_aaa);
+
+        if(BuildConfig.DEBUG)
+            SystemClock.sleep(dealyInMillis);
     }
 
     /**
@@ -35,6 +40,8 @@ public class TestMainActivityNavigation {
     public void TestNavigateToB() {
         TestHelper.clickView(R.id.goto_activity_b);
         TestHelper.shouldSee(R.id.textView_bbb);
+        if(BuildConfig.DEBUG)
+            SystemClock.sleep(dealyInMillis);
     }
 
     /**
@@ -44,5 +51,7 @@ public class TestMainActivityNavigation {
     public void TestNavigateToC() {
         TestHelper.clickView(R.id.goto_activity_c);
         TestHelper.shouldSee(R.id.textView_ccc);
+        if(BuildConfig.DEBUG)
+            SystemClock.sleep(dealyInMillis);
     }
 }
